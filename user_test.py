@@ -1,6 +1,6 @@
 import unittest #importing unittest module
 from user import User  #importing user2
-from user import Credentials
+from user import Credentials #importing credentials
 
 class TestUser(unittest.TestCase):
   '''Test class for testing cases for the user class behavior
@@ -54,9 +54,17 @@ class TestCredentials(unittest.TestCase):
   def test_save_credentials(self):
     ''' tests if the Save credentials method works properly'''
     self.new_credentials.save_credentials()#saving the new credentials 
-    self.assertEqual(len(Credentials.credentials_list),1)
-  
+    self.assertEqual(len(Credentials.credentials_list),3)
 
+  
+#sixth Test
+  def test_delete_credentials(self):
+    '''Test delete credentials to delete class credentials'''
+    self.new_credentials.save_credentials()
+    test_credentials = Credentials('account', 'username','password')
+    test_credentials.save_credentials()
+  
+#seventh test
 
 if __name__ == '__main__':
     unittest.main()
