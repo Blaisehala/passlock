@@ -30,13 +30,30 @@ class User:
 
 
 
-class Accountcredentials:
+class Credentials:
   def __init__(self,account,username, password):
     self.account = account
     self.username = username
     self.password = password
 
-  accountcredentials_list = []
-  def save_accountcredentials(self):
-    '''Saves the account credentials in the account credentials list.'''
-    Accountcredentials.accountcredentials_list.append(self)
+  credentials_list = []
+  def save_credentials(self):
+    '''Saves the  credentials in the  credentials list.'''
+    Credentials.credentials_list.append(self)
+
+  def delete_credentials(self):
+    Credentials.credentials_list.remove(self)
+
+  
+@classmethod
+def display_credentials(cls):
+    return cls.credentials_list
+
+
+@classmethod
+def search_credentials(cls,account):
+    for credential in cls.credentials_list:
+        if credential.account == account:
+          return credential
+
+
