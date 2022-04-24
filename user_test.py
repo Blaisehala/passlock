@@ -3,11 +3,16 @@ from user import User  #importing user2
 from user import Credentials #importing credentials
 
 class TestUser(unittest.TestCase):
-  '''Test class for testing cases for the user class behavior
+  '''
+  Test class for testing cases for the user class behavior
   '''
 
   def setUp(self): #Set up the method to run each test cases
    self.new_user = User("Blaise", "!@#$%^&*")
+
+   #Teardown method
+  def tearDown(self):
+   User.user_list
 
 #First test Case 
   def test_init(self):
@@ -65,6 +70,16 @@ class TestCredentials(unittest.TestCase):
     test_credentials.save_credentials()
   
 #seventh test
+  def test_display_all_credentials(self):
+    '''Method that returns a list of credentials'''
+    self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
