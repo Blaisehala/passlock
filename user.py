@@ -4,15 +4,17 @@ class User:
   '''
   This class represents/generates the new instance of user
   '''
-  user_list = []
 
-  def __init__(self,usernamme,password):
+  def __init__(self,username,password):
     '''
     The __init__ method helps to define properties for our objects.The __init__ function is called every time an object is created from a class. 
     '''
-    
-    self.usernamme = usernamme
+
+    self.username = username
     self.password = password
+
+  user_list = []
+
   
   def save_user(self):
     '''
