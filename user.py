@@ -27,3 +27,16 @@ class User:
     delete_user method deletes the user object from the user list.
     '''
     User.user_list.remove(self)
+
+
+
+class Accountcredentials:
+  def __init__(self,account,username, password):
+    self.account = account
+    self.username = username
+    self.password = password
+
+  accountcredentials_list = []
+  def save_accountcredentials(self):
+    '''Saves the account credentials in the account credentials list.'''
+    Accountcredentials.accountcredentials_list.append(self)
