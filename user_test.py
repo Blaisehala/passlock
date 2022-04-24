@@ -18,9 +18,20 @@ class TestUser(unittest.TestCase):
 
 #Second test Case
   def test_save_user(self):
+    '''test_save_user test method tests if the  object will be saved properly'''
     self.new_user.save_user() #saving the new contact
-    self.assertEqual(self.new_user.username)
-  
+    self.assertEqual(self.new_user.username) #CHECK CHECK ON THIS LINE AND THE ERROR TYPE
+
+
+#Third test Case
+  def test_delete_user(self):
+    '''test_delete_user test method tests if the user object will be deleted'''
+    self.new_user.save_user()
+    test_user = User('Blaise','!@#$%^&*')
+    test_user.save_user()
+
+    self.new_user.delete_user()
+    self.assertEqual(self.new_user) #CHECK CHECK
 
 
 if __name__ == '__main__':
