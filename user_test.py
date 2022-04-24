@@ -21,7 +21,7 @@ class TestUser(unittest.TestCase):
   def test_save_user(self):
     '''test_save_user test method tests if the  object will be saved properly'''
     self.new_user.save_user() #saving the new contact
-    self.assertEqual(self.new_user.username) #CHECK CHECK ON THIS LINE AND THE ERROR TYPE
+    self.assertEqual(len(User.user_list),2) #CHECK CHECK ON THIS LINE AND THE ERROR TYPE
 
 
 #Third test Case
@@ -32,7 +32,7 @@ class TestUser(unittest.TestCase):
     test_user.save_user()
 
     self.new_user.delete_user()
-    self.assertEqual(self.new_user) #CHECK CHECK
+    self.assertEqual(len(User.user_list),1) #CHECK CHECK
 
 
 #Setting test Case for testing the class credentials
@@ -50,7 +50,12 @@ class TestCredentials(unittest.TestCase):
     self.assertEqual(self.new_credentials.username,'Blaise')
     self.assertEqual(self.new_credentials.password,'!@#$%^&*')
 
-
+#Fifth test case
+  def test_save_credentials(self):
+    ''' tests if the Save credentials method works properly'''
+    self.new_credentials.save_credentials()#saving the new credentials 
+    self.assertEqual(len(Credentials.credentials_list),1)
+  
 
 
 if __name__ == '__main__':
