@@ -15,7 +15,21 @@ def s_user(user):
     user.save_user() #The Function takes in the user object and then calls the save_user  method to save the user.
 
 
+def del_user(user):
+    ''' Function to delete user'''
+    user.delete_user()
 
+
+
+def make_credentials(account,username,password):
+    ''' Function to create new account credentials'''
+    new_credentials = Credentials(account,username,password)
+    return new_credentials
+
+
+def s_credentials(user_credentials):
+    ''' Function to save user  credentials'''
+    user_credentials.save_credentials()
     
 
 
