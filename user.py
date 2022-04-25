@@ -58,6 +58,18 @@ class Credentials:
       if credential.account == account:
         return credential
 
+@classmethod
+def verify_user(cls, username,password):
+  active_user =""
+  for user in User.user_list:
+      if (user.username == username and user.password == password):
+         active_user = user,username
+
+  return active_user
+
+
+
+
 
   def generatePassword(ln):
       characters= 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()'
