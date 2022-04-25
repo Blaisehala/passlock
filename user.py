@@ -1,5 +1,8 @@
 
 
+from random import randint
+
+
 class User:
   '''
   This class represents/generates the new instance of user
@@ -54,3 +57,11 @@ class Credentials:
     for credential in cls.credentials_list:
       if credential.account == account:
         return credential
+
+
+  def generatePassword(ln):
+      characters= 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()'
+      password= ''
+      for i in range(ln):
+          password += characters[randint(0,len(characters)-1)]
+      return password
