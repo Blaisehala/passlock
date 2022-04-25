@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/python3.8
 
 from user import User,Credentials
 
@@ -37,3 +37,53 @@ def del_credentials(user_credentials):
     ''' Function to  delete user credentials'''
     user_credentials.delete_credentials()
      
+
+
+def main():
+  print('Hola! Welcome to WatchWord.')
+    
+  while True:
+      '''
+      cu-create-user
+      lg-login
+      ex-exit
+      (shortcodes to be used while navigating the  app)  
+      '''
+      print("Use the following Shortcodes for your navigation🧭:\ncu -Create User\nlg -login\nex-exit")
+      shortcodes = input().lower().strip()
+      if shortcodes == "cu":
+          print("Enter user details")
+          print("-------------------")
+          username = input('USERNAME\n')
+
+          while True:
+              print("Enter tp - to type your password\n gp - to generate password")
+              password_choice = input('Choice').lower().strip()
+
+
+
+
+
+
+
+if __name__=='__main__':
+  main()
+
+
+
+# print('Blaise')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
