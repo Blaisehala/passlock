@@ -30,7 +30,10 @@ def make_credentials(account,username,password):
 def s_credentials(user_credentials):
     ''' Function to save user  credentials'''
     user_credentials.save_credentials()
-    
 
 
+
+def del_credentials(user_credentials):
+    ''' Function to  delete user credentials'''
+    user_credentials.delete_credentials()
      

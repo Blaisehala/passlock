@@ -15,7 +15,7 @@ class User:
 
   user_list = []
 
-  
+
   def save_user(self):
     '''
     Save_user method saves the user object into the user list.
@@ -44,16 +44,13 @@ class Credentials:
   def delete_credentials(self):
     Credentials.credentials_list.remove(self)
 
-  
-@classmethod
-def display_credentials(cls):
+
+  @classmethod
+  def display_credentials(cls):
     return cls.credentials_list
 
-
-@classmethod
-def search_credentials(cls,account):
+  @classmethod
+  def search_credentials(cls, account):
     for credential in cls.credentials_list:
-        if credential.account == account:
-          return credential
-
-
+      if credential.account == account:
+        return credential
