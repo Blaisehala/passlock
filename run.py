@@ -1,5 +1,6 @@
 #!/usr/bin/python3.8
 
+
 from user import User,Credentials
 
 
@@ -67,7 +68,20 @@ def main():
                   password = Credentials.generatePassword
                   break
               else:
-                  print("Invalid password.Use the shorcodes to generate password ")   
+                  print("Invalid password***.Use the shorcodes to generate password ")
+
+          newuser = make_user(username, password)
+        
+      elif shortcodes== 'li':
+            print ('Enter details to login')
+            username= input('username')
+            password= input('password')
+
+          
+
+
+
+            
 
         
 
