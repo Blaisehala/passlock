@@ -60,6 +60,17 @@ def main():
               print("Enter tp - to type your password\n gp - to generate password")
               password_choice = input('Choice').lower().strip()
 
+              if password_choice == 'tp':
+                  password = input('Password\n')
+                  break
+              elif password_choice == 'gp':
+                  password = Credentials.generatePassword
+                  break
+              else:
+                  print("Invalid password.Use the shorcodes to generate password ")   
+
+        
+
 
 
 
