@@ -38,6 +38,8 @@ def del_credentials(user_credentials):
     ''' Function to  delete user credentials'''
     user_credentials.delete_credentials()
      
+def login(name,password):
+    return Credentials.verify_user(name,password)
 
 
 def main():
