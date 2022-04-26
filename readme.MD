@@ -8,7 +8,7 @@
 ## Description
 
 
-WatchWord is a great terminal based pyrhon program that allows a user to store credentials of various accounts or sites, for later login or access.
+WatchWord is a great terminal based python program that allows a user to store credentials of various accounts or sites, for later login or access.
 
 
 
