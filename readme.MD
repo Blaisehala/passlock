@@ -88,6 +88,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 TEL : +254714775125
 Email: blaisehala@gmail.com
 
+<hr>
 
 #### Authors Info 
 
