@@ -27,12 +27,18 @@ def make_credentials(account, username, password):
 
 def s_credentials(user_credentials):
     ''' Function to save user  credentials'''
-    user_credentials.save_credentials()
+    return Credentials.save_credentials(user_credentials)
 
+def display_credentials(account):
+    return Credentials.display_credentials(account)
 
+    
 def del_credentials(user_credentials):
     ''' Function to  delete user credentials'''
-    user_credentials.delete_credentials()
+    return user_credentials.delete_credentials()
+
+def search_credentials(account):
+    return Credentials.search_credentials(account)
 
 
 def login(name, password):
@@ -102,14 +108,7 @@ def main():
             # break
           
 
-            # if user == username:
-                # print(f'welcome{username}') 
-
-            # elif user ==password:
-            #       print(f'welcome{username}')
-                
-                
-                 # f string to make string interpolation simpler
+            
 
             while True:
                 print('*' *60)
@@ -147,8 +146,37 @@ def main():
 
                 elif shortcodes== 'fc':
                     print("Enter your account name")
-                    find_credentials= input('Account Name').strip()
+                    user_credentials= input('Account Name').strip()
+                    if s_credentials(user_credentials):
+                        account=s_credentials(user_credentials)
+                        print("Your account is now available")
 
+                    else:
+                        print("Account not found")
+
+                elif shortcodes== 'dc':
+                    if display_credentials(username):
+                        print("Welcome")
+                        for i in display_credentials(username):
+                            print("{credential.account}\t {credential.username}\t {credential.password}")
+                    else:
+                        print("You dont have any credentials")    
+
+                elif  shortcodes== 'del':
+                    print("Enter Account Name")
+                    search = (input('Enter Account Name')).strip()
+                    if search_credentials(search):
+                        account = search_credentials(search)
+                        del_credentials(account)
+                        print("Account successfully deleted")
+                    else:
+                        print("Account not found")
+            else:
+
+                print("Please Create a new account")
+
+        else:
+            print("Invalid.! Please try again")
                     
 
 
@@ -156,18 +184,6 @@ def main():
 
 
                         
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
