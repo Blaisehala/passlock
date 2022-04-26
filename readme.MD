@@ -6,14 +6,14 @@
 #### By Blaise Hala
 
 ## Description
-<hr>
+
 
 WatchWord is a great terminal based pyrhon program that allows a user to store credentials of various accounts or sites, for later login or access.
 
-<hr>
+
 
 ## Installation / Setup instruction
-<hr>
+
 
 ##### The application requires the following installations to operate
 
@@ -30,11 +30,11 @@ WatchWord is a great terminal based pyrhon program that allows a user to store c
 * code . or atom . based on the text editor you have.
 
 ## Screenshot
-<hr>
+
 ![image](/image/Screenshot from 2022-04-26 10-54-42.png)
 
 # User Stories
-<hr>
+
 1.Given : A user wants to log into his/her Watchword account when : creating an account Then : The user must fill in his/her details.
 
 2.Given : A user wants to store other accounts passwords and usernames when : having passwords to store Then : The user can store other existing paswords in their Watchword account.
@@ -48,7 +48,7 @@ WatchWord is a great terminal based pyrhon program that allows a user to store c
 6.Given : A user wants to come up with their own password when : creating a credential account Then : The user is able to by automatically creating a new password
 
 ## Behaviour Driven Development
-<hr>
+
 
 |Behaviour|Input|Output|
 |:---|:---|:---|
@@ -87,7 +87,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #### Authors Contact
 TEL : +254714775125
 Email: blaisehala@gmail.com
-<hr>
+
 
 #### Authors Info 
 
