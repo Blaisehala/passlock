@@ -50,7 +50,7 @@ def generatePassword(ln):
 
 
 def main():
-    print('Hola! Welcome to WatchWord.')
+    print('HOLA! WELCOME TO WATCHWORD\n \\\\\\///\n.\t \\\\\\///--> -->\n \\\\\\///\n')
 
     while True:
         '''
