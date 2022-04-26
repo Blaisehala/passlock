@@ -31,7 +31,7 @@ WatchWord is a great terminal based pyrhon program that allows a user to store c
 
 ## Screenshot
 <hr>
-![image](image/Screenshot from 2022-04-26 10-54-42.png)
+![image](/image/Screenshot from 2022-04-26 10-54-42.png)
 
 # User Stories
 <hr>
